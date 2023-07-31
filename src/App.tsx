@@ -5,7 +5,7 @@ export default function MyApp() {
   const utcTimestamp = new Date().getTime();
   const gmtDateTime = new Date().toLocaleString();
 
-  const [time, setTime] = useState(Date.now());
+  const [, setTime] = useState(Date.now());
 
   useEffect(() => {
     const interval = setInterval(() => setTime(Date.now()), 1);
